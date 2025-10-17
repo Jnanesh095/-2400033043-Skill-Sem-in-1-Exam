@@ -1,18 +1,16 @@
-import React from "react";
-
 function Welcome(props) {
-  return (
-    <h2>Welcome, {props.name}!</h2>
-  );
+  return <h1>Welcome, {props.name}!</h1>;
 }
 
-
-export default function App() {
+// Rendering dynamically with different names
+function App() {
   return (
     <div>
       <Welcome name="Deepak" />
       <Welcome name="Jnanesh" />
-      <Welcome name="Priya" />
+      <Welcome name="Aisha" />
     </div>
   );
 }
+
+export default App;
